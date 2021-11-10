@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+    <title>Home</title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'home.css')}}">
+{% endblock head %}
+
+{% block body %}
+        <div id="heading">
+            <h4>Welcome to the home page of Twitter Sentiment Analysis.</h4>
+            
+        </div>
+        <section id="search-tweet-section">
+            <h5 style="color: azure;">Search the tweet below:</h5>
+            <br>
+            <div id="search-tweet-keyword">
+                <form action="/home" method="POST">
+                    <input type="text" id="keyword" name="keyword"> 
+                    
+                    <input type="submit" value="Search" id="search">
+                </form>
+            </div>
+        </section>
+        <section id="result">
+            
+                {% block resulting %}
+                
+                {% endblock resulting %}
+           
+        </section>
+        <footer>
+            <nav>
+                <a href="https://github.com/aiazm496">Github_profile</a>
+                <a href="https://www.linkedin.com/in/akash-agrawal-067768103/">Linkedin</a>
+            </nav>
+        </footer>
+
+{% endblock body %}

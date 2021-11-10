@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mochiy+Pop+P+One&display=swap");
+* {
+  margin: 0;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+#heading {
+  background-color: aquamarine;
+  width: 100%;
+  height: 8vh;
+  text-align: center;
+  padding-top: 25px;
+  font-size: large;
+}
+
+#search-tweet-section {
+  background-color: #1a0cba;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+  padding-top: 5em;
+}
+
+#search-tweet-section #keyword {
+  width: 30%;
+  height: 1.5em;
+  border: none;
+  border-radius: 5px;
+  margin-right: 2em;
+  padding: .5em;
+}
+
+#search-tweet-section #search {
+  border: none;
+  padding: .5em;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color: aquamarine;
+}
+
+#search-tweet-section #search:hover {
+  background-color: #e22bd0;
+  color: white;
+}
+
+#pie {
+  display: block;
+}
+
+nav {
+  background-color: black;
+  width: 100%;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav a {
+  margin: .3em .5em;
+  font-size: medium;
+}
+
+nav a:hover {
+  color: white;
+}
+/*# sourceMappingURL=home.css.map */
